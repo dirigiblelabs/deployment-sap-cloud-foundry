@@ -1,0 +1,11 @@
+{
+   "welcomeFile": "index.html",
+   "routes": [{
+         "source": "/",
+         "target": "/",
+         "destination": "app-destination"
+   }],
+   "websockets": {
+      "enabled": true
+   }
+}
