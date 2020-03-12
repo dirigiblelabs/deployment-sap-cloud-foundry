@@ -1,6 +1,6 @@
 # Setup
 
-1. Replace the following variables before deploying:
+1. Replace the following variables in **manifest.yaml** before deploying:
 
     |           Name           |     Description     |
     |--------------------------|---------------------|
