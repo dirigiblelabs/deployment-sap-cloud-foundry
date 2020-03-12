@@ -1,4 +1,4 @@
-# Eclipse Dirigible Deployoment for SAP Cloud Platform Cloud Foundry environment
+# Eclipse Dirigible Deployment for SAP Cloud Platform Cloud Foundry environment
 
 [![Eclipse License](http://img.shields.io/badge/license-Eclipse-brightgreen.svg)](LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/dirigiblelabs/deployment-sap-cloud-foundry.svg)](https://github.com/dirigiblelabs/deployment-sap-cloud-foundry/graphs/contributors)
