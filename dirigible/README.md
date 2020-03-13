@@ -13,4 +13,4 @@
 
 1. Create XSUAA service instance with ``cf create-service xsuaa application <applicationName>-xsuaa -c xs-security.json``
     > Replace ``<applicationName>`` before executing the command
-1. Deploy with ``cf push``
+1. Deploy with ``cf push --vars-file vars.yaml``
