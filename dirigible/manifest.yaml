@@ -1,0 +1,27 @@
+applications:
+# Dirigible AppRouter
+  - name: ((applicationName))
+    routes:
+      - route: ((applicationName))-((subdomain)).cfapps.((regionId)).hana.ondemand.com
+    path: approuter
+    memory: 128M
+    buildpacks:
+      - nodejs_buildpack
+    env:
+      TENANT_HOST_PATTERN: '((applicationName))-(.*).cfapps.eu10.hana.ondemand.com'
+      XS_APP_LOG_LEVEL: 'ERROR'
+      destinations: '[{"name":"app-destination", "url" :"https://((applicationName))-runtime-((subdomain)).cfapps.((regionId)).hana.ondemand.com", "forwardAuthToken": true}]'
+    services:
+      - ((applicationName))-xsuaa
+# Dirigible Runtime
+  - name: ((applicationName))-runtime
+    routes:
+      - route: ((applicationName))-runtime-((subdomain)).cfapps.((regionId)).hana.ondemand.com  
+    memory: ((runtimeMemory))
+    disk_quota: ((runtimeDiskQuota))
+    docker:
+      image: dirigiblelabs/dirigible-sap-cf:((runtimeDockerImageTag))
+    env:
+      DIRIGIBLE_THEME_DEFAULT: fiori
+    services:
+      - ((applicationName))-xsuaa

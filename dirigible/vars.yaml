@@ -1,0 +1,6 @@
+applicationName: <dirigible-application-name>
+subdomain: <subdomain>
+regionId: <region-id>
+runtimeMemory: 2G
+runtimeDiskQuota: 2G
+runtimeDockerImageTag: latest

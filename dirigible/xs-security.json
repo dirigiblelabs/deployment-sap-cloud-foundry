@@ -1,5 +1,5 @@
 {
-   "xsappname": "<dirigible-name>-xsuaa",
+   "xsappname": "<dirigible-application-name>-xsuaa",
    "tenant-mode": "shared",
    "scopes": [{
          "name": "$XSAPPNAME.Developer",
