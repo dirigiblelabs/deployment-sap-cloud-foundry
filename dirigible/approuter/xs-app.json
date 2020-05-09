@@ -2,6 +2,12 @@
    "welcomeFile": "index.html",
    "routes": [
       {
+         "source": "^/home",
+         "target": "/home",
+         "destination": "app-destination",
+         "authenticationType": "none"
+      },
+      {
          "source": "^/services/v3/public/",
          "target": "/services/v3/public/",
          "destination": "app-destination",
