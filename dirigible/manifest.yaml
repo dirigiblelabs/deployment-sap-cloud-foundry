@@ -20,7 +20,7 @@ applications:
     memory: ((runtimeMemory))
     disk_quota: ((runtimeDiskQuota))
     docker:
-      image: dirigiblelabs/dirigible-sap-cf:((runtimeDockerImageTag))
+      image: ((runtimeDockerImage)):((runtimeDockerImageTag))
     env:
       DIRIGIBLE_THEME_DEFAULT: fiori
     services:
