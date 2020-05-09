@@ -1,10 +1,24 @@
 {
    "welcomeFile": "index.html",
-   "routes": [{
-         "source": "/",
+   "routes": [
+      {
+         "source": "^/services/v3/public/",
+         "target": "/services/v3/public/",
+         "destination": "app-destination",
+         "authenticationType": "none"
+      },
+      {
+         "source": "^/services/v4/public/",
+         "target": "/services/v4/public/",
+         "destination": "app-destination",
+         "authenticationType": "none"
+      },
+      {
+         "source": "^/",
          "target": "/",
          "destination": "app-destination"
-   }],
+      }
+   ],
    "websockets": {
       "enabled": true
    }
