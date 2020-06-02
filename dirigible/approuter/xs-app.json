@@ -2,14 +2,26 @@
    "welcomeFile": "index.html",
    "routes": [
       {
-         "source": "^/home",
-         "target": "/home",
+         "source": "^/index.html",
+         "target": "/index.html",
          "destination": "app-destination",
          "authenticationType": "none"
       },
       {
-         "source": "^/services/v3/public/",
-         "target": "/services/v3/public/",
+         "source": "^/index-busy.html",
+         "target": "/index-busy.html",
+         "destination": "app-destination",
+         "authenticationType": "none"
+      },
+      {
+         "source": "^/css/bootstrap.min.css",
+         "target": "/css/bootstrap.min.css",
+         "destination": "app-destination",
+         "authenticationType": "none"
+      },
+      {
+         "source": "^/home",
+         "target": "/home",
          "destination": "app-destination",
          "authenticationType": "none"
       },
@@ -20,8 +32,28 @@
          "authenticationType": "none"
       },
       {
-         "source": "^/",
-         "target": "/",
+         "source": "^/websockets/",
+         "target": "/websockets/",
+         "destination": "app-destination"
+      },
+      {
+         "source": "^/services/v4/healthcheck",
+         "target": "/services/v4/healthcheck",
+         "destination": "app-destination"
+      },
+      {
+         "source": "^/services/v4/ide/",
+         "target": "/services/v4/ide/",
+         "destination": "app-destination"
+      },
+      {
+         "source": "^/services/v4/web/",
+         "target": "/services/v4/web/",
+         "destination": "app-destination"
+      },
+      {
+         "source": "^/services/v4/js/",
+         "target": "/services/v4/js/",
          "destination": "app-destination"
       }
    ],
