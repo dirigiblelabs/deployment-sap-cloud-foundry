@@ -32,6 +32,11 @@
          "authenticationType": "none"
       },
       {
+         "source": "^/logout",
+         "target": "/logout",
+         "destination": "app-destination"
+      },
+      {
          "source": "^/websockets/",
          "target": "/websockets/",
          "destination": "app-destination"
