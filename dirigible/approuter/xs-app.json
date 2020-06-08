@@ -42,6 +42,11 @@
          "destination": "app-destination"
       },
       {
+         "source": "^/services/v4/version",
+         "target": "/services/v4/version",
+         "destination": "app-destination"
+      },
+      {
          "source": "^/services/v4/ide/",
          "target": "/services/v4/ide/",
          "destination": "app-destination"
