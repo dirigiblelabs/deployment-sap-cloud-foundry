@@ -65,6 +65,11 @@
          "source": "^/services/v4/js/",
          "target": "/services/v4/js/",
          "destination": "app-destination"
+      },
+      {
+         "source": "^/services/v4/core/",
+         "target": "/services/v4/core/",
+         "destination": "app-destination"
       }
    ],
    "websockets": {
