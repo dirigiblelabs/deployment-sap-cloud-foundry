@@ -8,7 +8,7 @@ applications:
     buildpacks:
       - nodejs_buildpack
     env:
-      TENANT_HOST_PATTERN: '((applicationName))-(.*).cfapps.eu10.hana.ondemand.com'
+      TENANT_HOST_PATTERN: '((applicationName))-(.*).cfapps.((regionId)).hana.ondemand.com'
       XS_APP_LOG_LEVEL: 'ERROR'
       destinations: '[{"name":"app-destination", "url" :"https://((applicationName))-runtime-((subdomain)).cfapps.((regionId)).hana.ondemand.com", "forwardAuthToken": true}]'
     services:
