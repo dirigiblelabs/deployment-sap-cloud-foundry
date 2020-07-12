@@ -23,5 +23,6 @@ applications:
       image: ((runtimeDockerImage)):((runtimeDockerImageTag))
     env:
       DIRIGIBLE_THEME_DEFAULT: fiori
+      DIRIGIBLE_SCHEDULER_MEMORY_STORE: true
     services:
       - ((applicationName))-xsuaa
