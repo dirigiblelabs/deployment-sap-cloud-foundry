@@ -75,6 +75,11 @@
          "source": "^/services/v4/transport/",
          "target": "/services/v4/transport/",
          "destination": "app-destination"
+      },
+      {
+         "source": "^/odata/v2/",
+         "target": "/odata/v2/",
+         "destination": "app-destination"
       }
    ],
    "websockets": {
