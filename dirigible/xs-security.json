@@ -1,20 +1,40 @@
 {
    "xsappname": "<applicationName>-xsuaa",
    "tenant-mode": "shared",
-   "scopes": [{
+   "scopes": [
+      {
          "name": "$XSAPPNAME.Developer",
          "description": "Developer scope"
-      }, {
+      },
+      {
          "name": "$XSAPPNAME.Operator",
          "description": "Operator scope"
-   }],
-   "role-templates": [{
+      }
+   ],
+   "role-templates": [
+      {
          "name": "Developer",
          "description": "Developer related roles",
-         "scope-references": ["$XSAPPNAME.Developer"]
-      }, {
+         "scope-references": [
+            "$XSAPPNAME.Developer"
+         ]
+      },
+      {
          "name": "Operator",
          "description": "Operator related roles",
-         "scope-references": ["$XSAPPNAME.Operator"]
-   }]
+         "scope-references": [
+            "$XSAPPNAME.Operator"
+         ]
+      }
+   ],
+   "role-collections": [
+      {
+         "name": "dirigible",
+         "description": "Dirigible Developer",
+         "role-template-references": [
+            "$XSAPPNAME.Developer",
+            "$XSAPPNAME.Operator"
+         ]
+      }
+   ]
 }
