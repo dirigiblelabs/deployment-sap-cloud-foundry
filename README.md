@@ -24,7 +24,7 @@
 1. Assign the ``Developer`` and the ``Operator`` role to your user from the [SAP Cloud Platform Cockpit](https://account.hana.ondemand.com/)
 1. Access the Dirigible instance at: ``https://<applicationName>-<subdomain>.cfapps.<regionId>.hana.ondemand.com``
 
-
+> Note: Step by step tutorial can be found [here](https://blogs.sap.com/2020/03/15/how-to-deploy-eclipse-dirigible-in-the-sap-cloud-platform-cloud-foundry-environment/)
 ## License
 
 This project is copyrighted by [SAP SE](http://www.sap.com/) and is available under the [Eclipse Public License v 1.0](https://www.eclipse.org/legal/epl-v10.html). See [LICENSE](LICENSE) and [NOTICE.txt](NOTICE.txt) for further details.
