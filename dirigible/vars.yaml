@@ -1,7 +1,7 @@
 applicationName: <dirigible-application-name>
 subdomain: <subdomain>
 regionId: <region-id>
-runtimeMemory: 2G
-runtimeDiskQuota: 2G
-runtimeDockerImage: dirigiblelabs/dirigible-sap-cf
-runtimeDockerImageTag: latest
+memory: 2G
+diskQuota: 2G
+dockerImage: dirigiblelabs/dirigible-sap-cf
+dockerImageTag: latest

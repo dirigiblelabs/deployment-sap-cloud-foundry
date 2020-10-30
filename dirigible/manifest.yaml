@@ -1,26 +1,12 @@
 applications:
-# Dirigible AppRouter
+# Dirigible
   - name: ((applicationName))
     routes:
-      - route: ((applicationName))-((subdomain)).cfapps.((regionId)).hana.ondemand.com
-    path: approuter
-    memory: 128M
-    buildpacks:
-      - nodejs_buildpack
-    env:
-      TENANT_HOST_PATTERN: '((applicationName))-(.*).cfapps.((regionId)).hana.ondemand.com'
-      XS_APP_LOG_LEVEL: 'ERROR'
-      destinations: '[{"name":"app-destination", "url" :"https://((applicationName))-runtime-((subdomain)).cfapps.((regionId)).hana.ondemand.com", "forwardAuthToken": true}]'
-    services:
-      - ((applicationName))-xsuaa
-# Dirigible Runtime
-  - name: ((applicationName))-runtime
-    routes:
-      - route: ((applicationName))-runtime-((subdomain)).cfapps.((regionId)).hana.ondemand.com  
-    memory: ((runtimeMemory))
-    disk_quota: ((runtimeDiskQuota))
+      - route: ((applicationName))-((subdomain)).cfapps.((regionId)).hana.ondemand.com  
+    memory: ((memory))
+    disk_quota: ((diskQuota))
     docker:
-      image: ((runtimeDockerImage)):((runtimeDockerImageTag))
+      image: ((dockerImage)):((dockerImageTag))
     env:
       DIRIGIBLE_THEME_DEFAULT: fiori
       DIRIGIBLE_SCHEDULER_MEMORY_STORE: true
