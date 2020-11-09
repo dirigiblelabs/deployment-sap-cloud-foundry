@@ -20,6 +20,8 @@
 1. Replace the ``<applicationName>`` in **xs-security.json** with the one from **vars.yaml**
 1. Create XSUAA service instance with ``cf create-service xsuaa application <applicationName>-xsuaa -c xs-security.json``
     > Replace ``<applicationName>`` with the one from **vars.yaml** before executing the command
+    1. To update the XSUAA service instance, for example with additional role, then execute the following command:
+    > ``cf update-service <applicationName>-xsuaa -c xs-security.json``
 1. Deploy with ``cf push --vars-file vars.yaml``
 1. Assign the ``Developer`` and the ``Operator`` role to your user from the [SAP Cloud Platform Cockpit](https://account.hana.ondemand.com/)
 1. Access the Dirigible instance at: ``https://<applicationName>-<subdomain>.cfapps.<regionId>.hana.ondemand.com``
