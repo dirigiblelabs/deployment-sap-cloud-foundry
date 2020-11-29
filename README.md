@@ -37,4 +37,6 @@ cf push dirigible \
 -m 2G -k 2G
 ```
 
+> Note: Before executing the command, replace the `<org-name>` with the **_Org Name_** value _(a.k.a **subdomain**)_
+
 This project is copyrighted by [SAP SE](http://www.sap.com/) and is available under the [Eclipse Public License v 1.0](https://www.eclipse.org/legal/epl-v10.html). See [LICENSE](LICENSE) and [NOTICE.txt](NOTICE.txt) for further details.
