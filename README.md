@@ -32,7 +32,7 @@
 ## Setup Cloud Foundry CLI:
 ```
 cf push dirigible \
---docker-image=dirigiblelabs/dirigiblelabs/dirigible-sap-cf:latest \
+--docker-image=dirigiblelabs/dirigible-sap-cf:latest \
 --hostname dirigible-<org-name> \
 -m 2G -k 2G
 ```
